@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zaheer Khan — AI &amp; Machine Learning</title>
+<meta name="description" content="Zaheer Khan — AI &amp; Machine Learning portfolio. 10 practical ML projects spanning regression, classification, NLP and a deployed Streamlit application.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A0F0C'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' font-weight='700' fill='%2339D97A' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">ZK<span>.</span></a>
+    <div class="nav__links" id="navLinks">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+      <a href="https://github.com/zaheerkhan03260-rgb" target="_blank" rel="noopener" class="nav__cta">GitHub ↗</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__mobile" id="navMobile">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a href="https://github.com/zaheerkhan03260-rgb" target="_blank" rel="noopener">GitHub ↗</a>
+</div>
+
+<section class="hero" id="home">
+  <canvas id="neural-canvas"></canvas>
+  <div class="container hero__inner">
+    <div>
+      <div class="pill"><span class="pill__dot"></span> Open to learning &amp; opportunities</div>
+      <div class="eyebrow">AI · Machine Learning · Python</div>
+      <h1 class="hero__title" id="heroTitle">Building practical <span class="grad-text">AI solutions</span> from data.</h1>
+      <p class="hero__desc">I'm <b>Zaheer Khan</b>, an AI &amp; Machine Learning learner focused on turning real-world datasets into working prediction systems and deployable applications.</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">Explore my work <span class="btn--arrow">↓</span></a>
+        <a href="https://github.com/zaheerkhan03260-rgb" target="_blank" rel="noopener" class="btn btn--ghost">GitHub <span class="btn--arrow">↗</span></a>
+        <!--
+          DOWNLOAD CV BUTTON
+          1. Put your CV file at: images/cv.pdf
+          2. Remove class="is-disabled" and the disabled title below to activate it.
+        -->
+        <a href="images/cv.pdf" download class="btn btn--ghost is-disabled" title="Add images/cv.pdf then remove is-disabled class">Download CV <span class="btn--arrow">↓</span></a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><b>10</b><span>ML Projects</span></div>
+        <div class="stat"><b>1</b><span>Live Deployment</span></div>
+        <div class="stat"><b>Python</b><span>Core Stack</span></div>
+      </div>
+    </div>
+    <div class="hero__portrait">
+      <div class="portrait-glow"></div>
+      <div class="portrait-frame">
+        <img src="images/profile.png" alt="Zaheer Khan professional portrait">
+        <div class="portrait-tag">
+          <span>ML <b>Prediction</b></span>
+          <span>NLP <b>Text AI</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="eyebrow">About</div>
+      <h2 class="section__title">Learning by building.</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>I learn Machine Learning by taking a real problem, exploring the data, preparing features, training models, evaluating results, and turning the final model into something people can actually use.</p>
+        <p>My project journey covers regression, classification, NLP, imbalanced-data evaluation, and an end-to-end deployed employee attrition application — each one a step further into practical ML.</p>
+      </div>
+      <div class="about__steps reveal">
+        <div class="step">
+          <span class="step__num">01</span>
+          <div><div class="step__title">Data &amp; EDA</div><div class="step__desc">Understand patterns and data quality.</div></div>
+        </div>
+        <div class="step">
+          <span class="step__num">02</span>
+          <div><div class="step__title">Preprocessing</div><div class="step__desc">Prepare useful features for ML.</div></div>
+        </div>
+        <div class="step">
+          <span class="step__num">03</span>
+          <div><div class="step__title">Modeling</div><div class="step__desc">Train and compare algorithms.</div></div>
+        </div>
+        <div class="step">
+          <span class="step__num">04</span>
+          <div><div class="step__title">Deployment</div><div class="step__desc">Turn the model into a usable app.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="eyebrow">Skills</div>
+      <h2 class="section__title">Tools I work with.</h2>
+      <p class="section__desc">A practical stack built around Python and the machine-learning workflow.</p>
+    </div>
+    <div class="skills__grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="eyebrow">Projects</div>
+      <h2 class="section__title">10 projects. One learning journey.</h2>
+      <p class="section__desc">From beginner prediction models to a complete deployed machine-learning application.</p>
+    </div>
+    <div class="projects__grid" id="projectsGrid"></div>
+
+    <div class="featured reveal">
+      <span class="featured__eyebrow">Featured — Project 10</span>
+      <h3 class="featured__title">Employee Attrition Prediction</h3>
+      <p class="featured__desc">An end-to-end portfolio project using the IBM HR Analytics dataset: EDA, preprocessing, model comparison, precision/recall/F1 evaluation, confusion matrix, feature importance, and a professional Streamlit UI.</p>
+      <div class="featured__tags">
+        <span class="tag">Logistic Regression</span>
+        <span class="tag">Random Forest comparison</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">GitHub</span>
+      </div>
+      <div class="featured__actions">
+        <a href="https://10employeeattritionprediction-3y6kew8jjn7drbptxfevpa.streamlit.app/" target="_blank" rel="noopener" class="btn btn--primary">Open Live App <span class="btn--arrow">↗</span></a>
+        <a href="https://github.com/zaheerkhan03260-rgb/10_Employee_Attrition_Prediction" target="_blank" rel="noopener" class="btn btn--ghost">View Repository <span class="btn--arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="eyebrow">Contact</div>
+      <h2 class="section__title">Have an opportunity or project?</h2>
+      <p class="section__desc">I'm building my skills in AI &amp; Machine Learning and I'm open to learning-focused opportunities, collaborations, and practical projects.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="terminal reveal">
+        <div class="terminal__bar">
+          <span class="terminal__dot" style="background:#ff5f57;"></span>
+          <span class="terminal__dot" style="background:#febc2e;"></span>
+          <span class="terminal__dot" style="background:#28c840;"></span>
+        </div>
+        <div class="terminal__body">
+          <div class="terminal__line"><span class="terminal__prompt">$</span> whoami</div>
+          <div class="terminal__line">zaheer_khan — AI &amp; ML learner, based on practical projects</div>
+          <div class="terminal__line"><span class="terminal__prompt">$</span> status</div>
+          <div class="terminal__line">open_to_work: true · open_to_collab: true</div>
+          <div class="terminal__line"><span class="terminal__prompt">$</span> connect --via github<span class="terminal__cursor"></span></div>
+        </div>
+      </div>
+
+      <!--
+        CONTACT CARD
+        Email and LinkedIn are live. CV button (in hero) stays disabled until
+        images/cv.pdf is added — see the DOWNLOAD CV BUTTON comment above.
+      -->
+      <div class="contact-card reveal">
+        <div class="contact-card__title">Reach me</div>
+        <div class="contact-list">
+          <a href="https://github.com/zaheerkhan03260-rgb" target="_blank" rel="noopener" class="contact-list__item is-active">
+            <span class="contact-list__label">GitHub</span>
+            <span>↗</span>
+          </a>
+          <a href="mailto:zaheerkhan0326@gmail.com" class="contact-list__item is-active">
+            <span class="contact-list__label">Email</span>
+            <span>↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/zaheer-khan-9866a4404" target="_blank" rel="noopener" class="contact-list__item is-active">
+            <span class="contact-list__label">LinkedIn</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact__actions">
+      <a href="mailto:zaheerkhan0326@gmail.com" class="btn btn--primary">Email Me <span class="btn--arrow">↗</span></a>
+      <a href="https://www.linkedin.com/in/zaheer-khan-9866a4404" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn <span class="btn--arrow">↗</span></a>
+      <a href="https://github.com/zaheerkhan03260-rgb" target="_blank" rel="noopener" class="btn btn--ghost">GitHub <span class="btn--arrow">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__text">© 2026 Zaheer Khan — AI &amp; Machine Learning Portfolio</span>
+    <div class="footer__links">
+      <a href="#home">Back to top</a>
+      <a href="https://github.com/zaheerkhan03260-rgb" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/zaheer-khan-9866a4404" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:zaheerkhan0326@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<div class="to-top" id="toTop" aria-label="Scroll to top">↑</div>
+
+<script src="script.js"></script>
+</body>
+</html>
