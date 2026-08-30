@@ -5,14 +5,18 @@
 
 /* ---------- DATA ---------- */
 const skills = [
-  {code:'PY', name:'Python', desc:'Core language for data analysis and ML.'},
-  {code:'ML', name:'Machine Learning', desc:'Regression, classification and model evaluation.'},
-  {code:'DS', name:'Data Analysis', desc:'Pandas, cleaning, EDA and feature understanding.'},
-  {code:'NLP', name:'NLP', desc:'Text classification and TF-IDF workflows.'},
+  {code:'PY', name:'Python & OOP', desc:'Core language and object-oriented programming.'},
+  {code:'ML', name:'Machine Learning', desc:'Classification, regression, clustering, model evaluation.'},
+  {code:'DL', name:'Deep Learning', desc:'ANN, CNN and LSTM architectures.'},
+  {code:'CV', name:'Computer Vision', desc:'Video and image analysis with OpenCV.'},
+  {code:'GEN', name:'Generative AI', desc:'LLMs and Prompt Engineering.'},
+  {code:'API', name:'FastAPI', desc:'Building backend APIs for ML applications.'},
+  {code:'WEB', name:'React.js & Tailwind', desc:'Frontend dashboards and interfaces.'},
   {code:'SK', name:'Scikit-learn', desc:'Training, preprocessing and evaluation.'},
-  {code:'ST', name:'Streamlit', desc:'Building and deploying interactive ML apps.'},
-  {code:'GH', name:'Git & GitHub', desc:'Version control, repositories and project sharing.'},
-  {code:'J', name:'Joblib', desc:'Saving and loading trained ML models.'}
+  {code:'DB', name:'SQLite', desc:'Lightweight relational data storage.'},
+  {code:'GH', name:'Git & GitHub', desc:'Version control and project collaboration.'},
+  {code:'ST', name:'Streamlit', desc:'Deploying interactive ML applications.'},
+  {code:'VSC', name:'VS Code', desc:'Primary development environment.'}
 ];
 
 const icons = {

@@ -272,6 +272,12 @@ img{max-width:100%; display:block;}
 .about__grid{display:grid; grid-template-columns:1fr 1fr; gap:4rem;}
 @media (max-width:840px){ .about__grid{grid-template-columns:1fr; gap:2.5rem;} }
 .about__text p{color:var(--text-dim); margin-bottom:1.2rem; font-size:1.02rem;}
+.about__tags-block{margin-top:1.6rem;}
+.about__tags-label{
+  display:block; font-family:var(--mono); font-size:0.7rem; text-transform:uppercase;
+  letter-spacing:0.08em; color:var(--text-faint); margin-bottom:0.7rem;
+}
+.about__tags{display:flex; flex-wrap:wrap; gap:8px;}
 .about__steps{display:flex; flex-direction:column; gap:0;}
 .step{
   display:grid; grid-template-columns:56px 1fr; gap:1rem; padding:22px 0;
@@ -282,7 +288,52 @@ img{max-width:100%; display:block;}
 .step__title{font-family:var(--display); font-weight:600; font-size:1.05rem; margin-bottom:0.3rem;}
 .step__desc{color:var(--text-dim); font-size:0.92rem;}
 
-/* SKILLS */
+/* CAPSTONE */
+.capstone{
+  background:linear-gradient(160deg, var(--surface), var(--bg-alt));
+  border:1px solid var(--border-strong); border-radius:20px;
+  padding:3.2rem; position:relative; overflow:hidden;
+}
+.capstone::before{
+  content:""; position:absolute; top:-30%; left:-10%; width:55%; height:160%;
+  background:
+    radial-gradient(circle at 30% 30%, var(--green-soft), transparent 60%),
+    radial-gradient(circle at 70% 70%, var(--teal-glow), transparent 55%);
+  pointer-events:none;
+}
+.capstone__badge{
+  position:relative; z-index:1; display:inline-block;
+  font-family:var(--mono); font-size:0.72rem; color:var(--green-bright);
+  background:var(--green-soft); border:1px solid rgba(52,211,153,0.3);
+  border-radius:999px; padding:5px 14px; margin-bottom:1.2rem;
+}
+.capstone__title{position:relative; z-index:1; font-family:var(--display); font-weight:700; font-size:clamp(1.6rem,3.2vw,2.4rem); margin-bottom:1rem;}
+.capstone__desc{position:relative; z-index:1; color:var(--text-dim); max-width:680px; margin-bottom:2.2rem; font-size:1.02rem;}
+.capstone__grid{
+  position:relative; z-index:1;
+  display:grid; grid-template-columns:repeat(4, 1fr); gap:1.1rem; margin-bottom:2rem;
+}
+@media (max-width:900px){ .capstone__grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:520px){ .capstone__grid{grid-template-columns:1fr;} }
+.capstone__feature{
+  background:rgba(255,255,255,0.02); border:1px solid var(--border);
+  border-radius:12px; padding:1.2rem;
+}
+.capstone__feature-icon{font-family:var(--mono); font-size:0.72rem; color:var(--green); display:block; margin-bottom:0.6rem;}
+.capstone__feature-title{font-family:var(--display); font-weight:600; font-size:0.98rem; margin-bottom:0.35rem;}
+.capstone__feature-desc{color:var(--text-dim); font-size:0.84rem; line-height:1.5;}
+.capstone__tags{position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:8px;}
+
+/* CERTIFICATION STRIP */
+.cert{
+  margin-top:2.2rem; display:flex; align-items:center; gap:1.2rem;
+  background:var(--surface); border:1px solid var(--border-strong);
+  border-radius:var(--radius); padding:1.4rem 1.6rem;
+}
+.cert__icon{font-size:1.8rem; line-height:1;}
+.cert__title{font-family:var(--display); font-weight:600; font-size:1rem; margin-bottom:0.3rem;}
+.cert__desc{color:var(--text-dim); font-size:0.86rem;}
+@media (max-width:600px){ .cert{flex-direction:column; align-items:flex-start; text-align:left;} }
 .skills__grid{
   display:grid; grid-template-columns:repeat(4, 1fr); gap:1.1rem;
 }
